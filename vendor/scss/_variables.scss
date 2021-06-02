@@ -1,0 +1,13 @@
+$pinkColor: hsl(322, 100%, 66%);
+$pinkColorHover: hsl(321, 100%, 78%);
+$blackColor: black;
+$closeBlack: rgba(39, 37, 37, 0.8);
+$colorWhite: rgb(249, 249, 249);
+
+$fontHeader: 20px;
+$fontSmall: 16px;
+
+@media (max-width: 768px) {
+  $fontHeader: 18px;
+  $fontSmall: 200px;
+}

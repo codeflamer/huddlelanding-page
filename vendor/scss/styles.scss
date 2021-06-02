@@ -1,0 +1,424 @@
+@import "_variables";
+@import "_global";
+
+header {
+  //   border: 1px solid red;
+  nav {
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    img {
+      width: 150px;
+      height: 100%;
+    }
+    button {
+      padding: 7px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      background: white;
+      font-size: $fontSmall;
+      border: 1px solid $pinkColor;
+      color: $pinkColor;
+      transition: 0.2s;
+      box-shadow: 2px 2px 5px rgba(243, 243, 243, 10%);
+      &:hover {
+        border: 1px solid $pinkColorHover;
+        color: $pinkColorHover;
+      }
+      @media (max-width: 768px) {
+        font-size: $fontSmall;
+      }
+    }
+  }
+}
+
+.community {
+  //   border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 18vh;
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 700;
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
+  }
+  p {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    color: $closeBlack;
+    @media (max-width: 768px) {
+      margin: 20px 0;
+      font-size: 14px;
+    }
+  }
+  button {
+    color: $colorWhite;
+    padding: 15px 40px;
+    width: 300px;
+    border-radius: 25px;
+    background: $pinkColor;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 2px 4px 5px #e8cfcf;
+    transition: 0.2s;
+    &:hover {
+      background: $pinkColorHover;
+    }
+    @media (max-width: 768px) {
+      padding: 12px 30px;
+      font-size: 13px;
+      width: 200px;
+    }
+  }
+}
+
+.image-phone {
+  //   border: 1px solid red;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+.achievement {
+  //   border: 1px solid blue;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  .community-count {
+    display: block;
+    img {
+      width: 35px;
+    }
+    div {
+      font-size: 70px;
+      font-weight: bold;
+    }
+    span.text {
+      color: $closeBlack;
+      font-size: $fontSmall;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .community-count:nth-child(2) {
+      margin-top: 80px;
+    }
+  }
+}
+
+.grow-together {
+  // border: 1px solid red;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  .background-top {
+    width: 100%;
+    position: relative;
+    top: 5px;
+    img {
+      width: 100%;
+    }
+  }
+  .background-bottom {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    padding: 20px 60px;
+    background: #f6fbff;
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 500px;
+      line-height: 25px;
+      h2 {
+        font-weight: 700;
+        font-size: 35px;
+        margin-bottom: 25px;
+      }
+    }
+    .svg-image {
+      // border: 1px solid red;
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+    @media (max-width: 768px) {
+      padding: 20px 40px;
+      flex-direction: column;
+      flex-direction: column-reverse;
+      .text {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 14px;
+        h2 {
+          font-size: 23px;
+          margin-bottom: 20px;
+        }
+      }
+      .svg-image {
+        img {
+          max-height: 300px;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
+
+.flowing-convo {
+  // border: 1px solid red;
+  padding: 70px 50px;
+  .content {
+    // padding: 20px 60px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .svg-image {
+      // border: 1px solid red;
+      margin-right: 30px;
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 500px;
+      line-height: 25px;
+      h2 {
+        font-weight: 700;
+        font-size: 35px;
+        margin-bottom: 25px;
+      }
+    }
+    @media (max-width: 768px) {
+      padding: 20px 40px;
+      flex-direction: column;
+      flex-direction: column-reverse;
+      .text {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 14px;
+        h2 {
+          font-size: 23px;
+          margin-bottom: 20px;
+        }
+      }
+      .svg-image {
+        img {
+          max-height: 300px;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
+
+.build-community {
+  // border: 1px solid red;
+  padding: 50px 0;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 700;
+    margin-bottom: 30px;
+    max-width: 300px;
+    @media (max-width: 768px) {
+      font-size: 23px;
+    }
+  }
+  button {
+    color: $colorWhite;
+    padding: 20px 40px;
+    width: 300px;
+    border-radius: 25px;
+    background: $pinkColor;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 2px 4px 5px #e8cfcf;
+    transition: 0.2s;
+    &:hover {
+      background: $pinkColorHover;
+    }
+    @media (max-width: 768px) {
+      padding: 12px 30px;
+      font-size: 13px;
+      width: 200px;
+    }
+  }
+}
+
+.conclusion {
+  padding: 0;
+  color: white;
+  .header-wavy {
+    width: 100%;
+    position: relative;
+    top: 5px;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    // border: 1px solid red;
+
+    background: #00252e;
+    padding: 20px 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15vh;
+    .about-huddle {
+      // border: 1px solid pink;
+      .logo-arena {
+        font-size: 38px;
+        font-weight: 700;
+        @media (max-width: 768px) {
+          font-size: 30px;
+          margin-top: 25px;
+        }
+      }
+      margin-right: 10px;
+      max-width: 350px;
+      width: 100%;
+      .text {
+        margin-top: 15px;
+        line-height: 23px;
+      }
+      .contact {
+        margin-top: 25px;
+        list-style: none;
+        li {
+          margin: 14px 0;
+          img {
+            margin-right: 15px;
+          }
+        }
+      }
+      .social-media {
+        margin-top: 80px;
+
+        display: flex;
+        list-style: none;
+        padding: 4px 0;
+        li {
+          margin-right: 23px;
+          font-size: 30px;
+          cursor: pointer;
+        }
+        @media (max-width: 768px) {
+          margin-top: 40px;
+        }
+      }
+      @media (max-width: 768px) {
+        max-width: 500px;
+        // border: 1px solid red;
+        margin-right: 10px;
+        margin: 0 auto;
+      }
+    }
+    .newsletter {
+      max-width: 500px;
+      h4 {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+      .text {
+        line-height: 23px;
+        margin-bottom: 25px;
+        font-size: 15px;
+        width: 70%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      form {
+        display: flex;
+        justify-content: space-between;
+        input {
+          background-color: white;
+          border-radius: 4px;
+          height: 40px;
+          border: 0;
+          width: 70%;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+        button {
+          width: 100px;
+          color: white;
+          background: $pinkColor;
+          border: 0;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: 0.2s;
+          &:hover {
+            background: $pinkColorHover;
+          }
+          @media (max-width: 768px) {
+            max-width: 100px;
+            width: 50%;
+            padding: 12px 10px;
+            margin-top: 15px;
+            align-self: flex-end;
+          }
+        }
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 60px;
+      }
+    }
+    @media (max-width: 768px) {
+      // padding-top: 200px;
+      flex-direction: column-reverse;
+      padding: 20px 30px;
+      align-items: center;
+      font-size: 14px;
+    }
+  }
+}
